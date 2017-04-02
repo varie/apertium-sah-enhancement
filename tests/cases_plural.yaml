@@ -1,0 +1,46 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../sah.autogen.hfst
+    Morph: ../sah.automorf.hfst
+
+Tests:
+  "Case back-vowel: а": 
+    ат<n><pl><nom> : аттар
+    ат<n><pl><acc> : аттары
+    ат<n><pl><par> : аттарда
+    ат<n><pl><dat> : аттарга
+    ат<n><pl><abl> : аттартан
+    ат<n><pl><ins> : аттарынан
+    ат<n><pl><com> : аттардыын
+    ат<n><pl><comp> : аттардааҕар
+
+  "Case front-vowel: иэ": 
+    дьиэ<n><pl><nom> : дьиэлэр
+    дьиэ<n><pl><acc> : дьиэлэри
+    дьиэ<n><pl><par> : дьиэлэрдэ
+    дьиэ<n><pl><dat> : дьиэлэргэ
+    дьиэ<n><pl><abl> : дьиэлэртэн
+    дьиэ<n><pl><ins> : дьиэлэринэн
+    дьиэ<n><pl><com> : дьиэлэрдиин
+    дьиэ<n><pl><comp> : дьиэлэрдээҕэр
+
+  "Case back-vowel: о": 
+    ох<n><pl><nom> : охтор
+    ох<n><pl><acc> : охтору
+    ох<n><pl><par> : охтордо
+    ох<n><pl><dat> : охторго
+    ох<n><pl><abl> : охтортон
+    ох<n><pl><ins> : охторунан
+    ох<n><pl><com> : охтордуун
+    ох<n><pl><comp> : охтордооҕор
+
+  "Case front-vowel: үө":
+    үөр<n><pl><nom> : үөрдэр
+    үөр<n><pl><acc> : үөрдэри
+    үөр<n><pl><par> : үөрдэрдэ
+    үөр<n><pl><dat> : үөрдэргэ
+    үөр<n><pl><abl> : үөрдэртэн
+    үөр<n><pl><ins> : үөрлэринэн
+    үөр<n><pl><com> : үөрдэрдиин
+    үөр<n><pl><comp> : үөрдэрдээҕэр
