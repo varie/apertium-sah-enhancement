@@ -1,0 +1,4 @@
+
+      
+    lt-proc -w '/Users/varie/Documents/apertium/apertium-sah/sah.automorf.bin' | cg-proc -w '/Users/varie/Documents/apertium/apertium-sah/sah.rlx.bin' 
+  

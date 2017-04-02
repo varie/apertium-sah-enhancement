@@ -1,0 +1,8 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+srcdir=${prefix}/share/apertium/apertium-sah
+
+Name: apertium-sah
+Description: Finite-state morphological transducer and constraint grammar for Sakha 
+Version: 0.1.0
+
