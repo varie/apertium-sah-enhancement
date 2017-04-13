@@ -180,7 +180,7 @@ LEXICON CASES-OBL
 %<abl%>:%>%{t%}т%{A%}н # ;
 %<ins%>:%>%{i%}н%{A%}н # ;
 %<com%>:%>%{L%}%{I%}%{I%}н # ;
-!%<comp%>:%> # ;
+%<comp%>:%>%{T%}%{A%}%{A%}ҕ%{A%}р # ;  !!!
 
 LEXICON CASES-POSS-3SP
 
@@ -190,7 +190,7 @@ LEXICON CASES-POSS-3SP
 %<abl%>:%>тт%{A%}н # ;
 %<ins%>:%>н%{A%}н # ;
 %<com%>:%>н%{I%}н # ;
-!%<comp%>:%> # ;
+%<comp%>:%>н%{A%}%{A%}ҕ%{A%}р # ;  !!!
 
 LEXICON CASES-POSS-12SG
 
@@ -199,7 +199,7 @@ LEXICON CASES-POSS-12SG
 %<abl%>:%>тт%{A%}н # ;
 %<ins%>:%>н%{A%}н # ;
 %<com%>:%>н%{I%}н # ;
-!%<comp%>:%> # ;
+%<comp%>:%>н%{A%}%{A%}ҕ%{A%}р # ; !!!
 
 LEXICON CASES-NOM
 
@@ -688,13 +688,19 @@ V-NONFINITE-REGULAR_NEGATIVE ;
 
 V-NONFINITE-IRREGULAR_NEGATIVE ;
 
+LEXICON V-DER 
+
+%<coop%>:%>%{I%}с V-COMMON ; 
+
 LEXICON V-TV
 
 %<v%>%<tv%>: V-COMMON ;
+%<v%>%<tv%>: V-DER ;
 
 LEXICON V-IV
 
 %<v%>%<iv%>: V-COMMON ;
+%<v%>%<tv%>: V-DER ;
 
 LEXICON V-AUX
 
@@ -1618,7 +1624,6 @@ LEXICON Nouns
 автор:автор N1 ; ! ""
 композитор:композитор N1 ; ! ""
 театр:театр N1 ; ! ""
-километр:километр N1 ; ! ""
 центр:центр N1 ; ! ""
 полюс:полюс N1 ; ! ""
 кандидат:кандидат N1 ; ! ""
@@ -3527,6 +3532,8 @@ yy:yy N1 ; ! "вода"
 LEXICON ProperNouns
 
 Михаил:Михаил NP-ANT-M ; ! ""
+Оокко:Оокко NP-ANT-M ; ! ""
+Айсэн:Айсэн NP-ANT-M ; ! ""
 Миша:Миша NP-ANT-M ; ! ""
 Павел:Павел NP-ANT-M ; ! ""
 Фёдор:Фёдор NP-ANT-M ; ! ""
@@ -3584,6 +3591,7 @@ LEXICON ProperNouns
 
 Анна:Анна NP-ANT-F ; ! ""
 Мария:Мария NP-ANT-F ; ! ""
+Маша:Маша NP-ANT-F ; ! ""
 Анастасия:Анастасия NP-ANT-F ; ! ""
 Татьяна:Татьяна NP-ANT-F ; ! ""
 Тамара:Тамара NP-ANT-F ; ! ""
@@ -3611,6 +3619,7 @@ LEXICON ProperNouns
 Сайыына:Сайыына NP-ANT-F ; ! ""
 Сандаара:Сандаара NP-ANT-F ; ! ""
 Саргылаана:Саргылаана NP-ANT-F ; ! ""
+Саргы:Саргы NP-ANT-F ; ! ""
 Сардаана:Сардаана NP-ANT-F ; ! ""
 Сахаайа:Сахаайа NP-ANT-F ; ! ""
 Сахайаана:Сахайаана NP-ANT-F ; ! ""
@@ -3624,6 +3633,7 @@ LEXICON ProperNouns
 Айгылаана:Айгылаана NP-ANT-F ; ! ""
 Ypyмэччи:Ypyмэччи NP-ANT-F ; ! ""
 Фазила:Фазила NP-ANT-F; ! ""
+Айгүл:Айгүл  NP-ANT-F ; ! ""
 
 Оксана:Оксана NP-ANT-F; ! "Oksana" (Greek)
 Олег:Олег NP-ANT-M; ! "Oleg" (Skandinavian)
@@ -3669,6 +3679,7 @@ Ypyмэччи:Ypyмэччи NP-ANT-F ; ! ""
 Лариса:Лариса NP-ANT-F; ! "Larıysa" (Greek)
 Лев:Лев NP-ANT-M ; ! ""
 Лена:Лена NP-ANT-F ; ! ""
+Лэна:Лэна NP-ANT-F ; ! ""
 Леонардо:Леонардо NP-ANT-M ; ! ""
 Леонид:Леонид NP-ANT-M ; ! ""
 Лидия:Лидия NP-ANT-F ; ! ""
@@ -5013,6 +5024,7 @@ LEXICON Verbs
 ытыр:ытыр  V-TV ; ! "bite"
 хас:хас  V-TV ; ! "dig"
 тик:тик  V-TV ; ! "sew"
+тиктэр:тиктэр  V-TV ; ! "make sew" ! Mor/Caus
 кэл:кэл  V-IV ; ! "come"
 салаа:салаа  V-TV ; ! "lick"
 тараа:тараа  V-TV ; ! "comb"
