@@ -1,0 +1,62 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../sah.autogen.hfst
+    Morph: ../sah.automorf.hfst
+
+Tests:
+  "Possessive cases plural": 
+ 
+    ат<n><pl><px1sg><nom> : аттарым
+    ат<n><pl><px1sg><acc> : аттарбын
+    ат<n><pl><px1sg><par> : аттарбына
+    ат<n><pl><px1sg><dat> : аттарбар
+    ат<n><pl><px1sg><abl> : аттарбыттан
+    ат<n><pl><px1sg><ins> : аттарбынан
+    ат<n><pl><px1sg><com> : аттарбыныын
+    ат<n><pl><px1sg><comp> : аттарбынааҕар
+
+    ат<n><pl><px2sg><nom> : аттарыҥ
+    ат<n><pl><px2sg><acc> : аттаргын
+    ат<n><pl><px2sg><par> : аттаргына
+    ат<n><pl><px2sg><dat> : аттаргар
+    ат<n><pl><px2sg><abl> : аттаргыттан
+    ат<n><pl><px2sg><ins> : аттаргынан
+    ат<n><pl><px2sg><com> : аттаргыныын
+    ат<n><pl><px2sg><comp> : аттаргынааҕар
+
+    ат<n><pl><px3sg><nom> : аттара
+    ат<n><pl><px3sg><acc> : аттарын
+    ат<n><pl><px3sg><par> : аттарына
+    ат<n><pl><px3sg><dat> : аттарыгар
+    ат<n><pl><px3sg><abl> : аттарыттан
+    ат<n><pl><px3sg><ins> : аттарынан
+    ат<n><pl><px3sg><com> : аттарыныын
+    ат<n><pl><px3sg><comp> : аттарынааҕар
+
+    ат<n><pl><px1pl><nom> : аттарбыт
+    ат<n><pl><px1pl><acc> : аттарбытын
+    ат<n><pl><px1pl><par> : аттарбытына
+    ат<n><pl><px1pl><dat> : аттарбытыгар
+    ат<n><pl><px1pl><abl> : аттарбытыттан
+    ат<n><pl><px1pl><ins> : аттарбытытынан
+    ат<n><pl><px1pl><com> : аттарбытыныын
+    ат<n><pl><px1pl><comp> : аттарбытынааҕар
+
+    ат<n><pl><px2pl><nom> : аттаргыт
+    ат<n><pl><px2pl><acc> : аттаргытын
+    ат<n><pl><px2pl><par> : аттаргытына
+    ат<n><pl><px2pl><dat> : аттаргытыгар
+    ат<n><pl><px2pl><abl> : аттаргытыттан
+    ат<n><pl><px2pl><ins> : аттаргытынан
+    ат<n><pl><px2pl><com> : аттаргытыныын
+    ат<n><pl><px2pl><comp> : аттаргытынааҕар
+
+    ат<n><pl><px3pl><nom> : аттара
+    ат<n><pl><px3pl><acc> : аттарын
+    ат<n><pl><px3pl><par> : аттарына
+    ат<n><pl><px3pl><dat> : аттарыгар
+    ат<n><pl><px3pl><abl> : аттарыттан
+    ат<n><pl><px3pl><ins> : аттарынан
+    ат<n><pl><px3pl><com> : аттарыныын
+    ат<n><pl><px3pl><comp> : аттарынааҕар
