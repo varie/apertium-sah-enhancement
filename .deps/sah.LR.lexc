@@ -790,6 +790,9 @@ LEXICON Conjunctions
 
 даҕаны:даҕаны CC ; ! "both... and ..."
 
+!!!
+эрээри:эрээри СC ; ! "хотя, хоть"
+
 эбит:эбит CA ; ! "если"
 
 LEXICON Postpositions
@@ -807,6 +810,9 @@ LEXICON Postpositions
 иннинэ:иннинэ POST ; ! "до, перед"
 өттүгэр:өттүгэр POST ; ! ""
 тэҥэ:тэҥэ POST ; ! "как"
+
+!!!
+кытары:кытары POST; ! "c"
 
 
 LEXICON Pronouns
@@ -4377,6 +4383,10 @@ Ypyмэччи:Ypyмэччи NP-ANT-F ; ! ""
 СӨ:СӨ NP-TOP-ASSR ; ! "Саха Республика"
 РСФСР:РСФСР NP-TOP-ASSR ; ! ""
 
+!!!
+СР:СР NP-TOP-ASSR ; ! "Саха Республика"
+РФ:РФ NP-TOP-ASSR ; ! "Russian Federation"
+
 СГУ:СГУ NP-TOP-ABBR ; ! FIXME: check university = org?
 
 
@@ -5031,6 +5041,9 @@ LEXICON Adverbs
 
 сахалыы:сахалыы ADV ; ! "по-якутски" FIXME: prod.deriv? 
 
+!!!
+син:син ADV ; ! "довольно, достаточно, изрядно"
+
 LEXICON Verbs
 
 ! сыт:сыт V-AUX ; ! "do something for a moment"
@@ -5340,6 +5353,9 @@ LEXICON Verbs
 тэбээ:тэбээ V-TV ; ! "shake off"
 
 ууһаа:ууһаа V-IV ; ! ""
+
+!!!
+сырыт:сырыт V-IV ; ! "to visit"
 
 LEXICON Interjections
 
