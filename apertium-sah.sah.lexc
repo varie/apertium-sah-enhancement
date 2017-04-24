@@ -47,6 +47,7 @@ Multichar_Symbols
 
 %<px1sg%>          !
 %<px2sg%>          !
+%<px3sg%>          !
 %<px3sp%>          !
 %<px1pl%>          !
 %<px2pl%>          !
@@ -189,7 +190,7 @@ LEXICON CASES-POSS-3SP
 %<acc%>:%>н # ;
 %<abl%>:%>тт%{A%}н # ;
 %<ins%>:%>н%{A%}н # ;
-%<com%>:%>н%{I%}н # ;
+%<com%>:%>н%{I%}%{I%}н # ;
 %<comp%>:%>н%{A%}%{A%}ҕ%{A%}р # ;  !!!
 
 LEXICON CASES-POSS-12SG
@@ -198,7 +199,7 @@ LEXICON CASES-POSS-12SG
 %<acc%>:%>н # ;
 %<abl%>:%>тт%{A%}н # ;
 %<ins%>:%>н%{A%}н # ;
-%<com%>:%>н%{I%}н # ;
+%<com%>:%>н%{I%}%{I%}н # ;
 %<comp%>:%>н%{A%}%{A%}ҕ%{A%}р # ; !!!
 
 LEXICON CASES-NOM
@@ -210,9 +211,11 @@ LEXICON POSS-JNW
 CASES-ETC ;
 %<px1sg%>:%>%{i%}%{М%}%{ы%} CASES-NOM ;
 %<px2sg%>:%>%{i%}%{Ҥ%} CASES-NOM ;
-%<px3sp%>:%>%{t%}%{A%} CASES-NOM ;
+%<px3sg%>:%>%{t%}%{A%} CASES-NOM ;
+!%<px3sp%>:%>%{t%}%{A%} CASES-NOM ;
 %<px1pl%>:%>%{B%}%{I%}т%{ы%} CASES-NOM ;
 %<px2pl%>:%>%{G%}%{I%}т%{ы%} CASES-NOM ;
+%<px3pl%>:%>%{t%}%{A%} CASES-NOM ;
 %<px3pl%>:%>%{L%}%{A%}р%{ы%} CASES-ETC ;
 
 LEXICON POSS-OBL
@@ -221,21 +224,24 @@ CASES-ETC ;
 %<px1sg%>:%>%{B%}%{I%} CASES-POSS-12SG ;
 %<px1sg%>%<dat%>:%>%{B%}%{A%}р # ;
 %<px2sg%>:%>%{G%}%{I%} CASES-POSS-12SG ;
-%<px2sg%>%<dat%>:%>%{G%}%{A%}р # ; 
-%<px3sp%>:%>%{t%}%{I%} CASES-POSS-3SP ;
+%<px2sg%>%<dat%>:%>%{G%}%{A%}р # ;
+%<px3sg%>:%>%{t%}%{I%} CASES-POSS-3SP ;
+!%<px3sp%>:%>%{t%}%{I%} CASES-POSS-3SP ;
 %<px1pl%>:%>%{B%}%{I%}т%{I%} CASES-POSS-3SP ;
 %<px2pl%>:%>%{G%}%{I%}т%{I%} CASES-POSS-3SP ;
-!%<px3pl%>:%>%{L%}%{A%}р%{I%} CASES-ETC ;
+%<px3pl%>:%>%{L%}%{A%}р%{I%} CASES-ETC ;
+%<px3pl%>:%>%{L%}%{A%}р%{I%} CASES-POSS-3SP ;
 
 LEXICON POSS-NOM
 
 CASES-ETC ;
 %<px1sg%>:%>%{i%}м CASES-NOM ;
 %<px2sg%>:%>%{i%}ҥ CASES-NOM ;
-%<px3sp%>:%>%{t%}%{A%} CASES-NOM ;
+%<px3sg%>:%>%{t%}%{A%} CASES-NOM ;
+!%<px3sp%>:%>%{t%}%{A%} CASES-NOM ;
 %<px1pl%>:%>%{B%}%{I%}т CASES-NOM ;
 %<px2pl%>:%>%{G%}%{I%}т CASES-NOM ;
-!%<px3pl%>:%>%{L%}%{A%}р%{A%} CASES-NOM ;
+%<px3pl%>:%>%{L%}%{A%}р%{A%} CASES-NOM ;
 
 LEXICON ATTR-SUBST 
 
@@ -5043,6 +5049,7 @@ LEXICON Adverbs
 
 !!!
 син:син ADV ; ! "довольно, достаточно, изрядно"
+салгыы:салгыы ADV ; ! "дальше"
 
 LEXICON Verbs
 
