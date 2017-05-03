@@ -168,8 +168,8 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "TODO test sentence" | apertium -d . sah-morph | tee .test-mt
-	@echo "TODO test analysis results" > .test-ref
+	echo "Ол кэннэ спортивнай суумкатын, паспорын уонна харчытын булунна" | apertium -d . sah-morph | tee .test-mt
+	@echo '^Ол/ол<prn><dem><sg><nom>$$ ^кэннэ/кэннэ<post>$$ ^спортивнай/спортивнай<adj>$$ ^суумкатын/суумка<n><px3sg><acc>$$^,/,<cm>$$ ^паспорын/*паспорын$$ ^уонна/уон<num><subst><par>/уонна<cnjcoo>$$ ^харчытын/харчы<n><px3sg><acc>$$ ^булунна/*булунна$$^./.<sent>$$' > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
 

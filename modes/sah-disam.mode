@@ -1,4 +1,0 @@
-
-      
-    lt-proc -w '/Users/varie/Documents/apertium/apertium-sah/sah.automorf.bin' | cg-conv -a| vislcg3 --trace --grammar '/Users/varie/Documents/apertium/apertium-sah/sah.rlx.bin' 
-  

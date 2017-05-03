@@ -1,4 +1,0 @@
-
-      
-    hfst-strings2fst -S| hfst-compose-intersect '/Users/varie/Documents/apertium/apertium-sah/.deps/sah.twol.hfst' | hfst-fst2strings
-  
