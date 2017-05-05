@@ -1,0 +1,97 @@
+* NOTES
+
+** COVERAGE
+
+corpus from Francis Tyers
+
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ aq-covtest ../Sakha-corpus/sah.crp.txt sah.automorf.bin 
+Number of tokenised words in the corpus: 1019429
+Coverage: 71.13%
+Top unknown words in the corpus:
+1254	 сылдьар
+1154	 с
+1074	 к
+963	 эрээри
+871	 буолуо
+828	 и
+803	 а
+791	 А
+765	 т
+626	 В
+603	 о
+593	 буоллаҕына
+584	 буоллар
+572	 сылдьан
+550	 үрдүнэн
+470	 тахса
+466	 р
+458	 барытын
+448	 м
+439	 АЛРОСА
+Translation time: 9.93380856513977 seconds
+
+______________________________________________________________________________
+
+total tokens:   858193
+after cleaning: 789173
+unique types:    96430
+no trash:        92633
+
+sort --ignore-case < sah.crp.txt-types | uniq -c --ignore-case >  sah.crp.txt-types.uniq 
+
+[- .,!?№–“”„=();: +%«»…_/*·"$&—•―]+
+
+
+Number of tokenised words in the corpus: 100406
+Coverage: 23.22%
+Top unknown words in the corpus:
+354	 к
+268	 í
+249	 а
+209	 т
+198	 ү
+189	 р
+138	 э
+132	 о
+112	 и
+111	 л
+90	 ы
+89	 н
+86	 б
+84	 та
+76	 с
+71	 é
+65	 тү
+63	 бы
+62	 м
+62	 ын
+Translation time: 1.0217945575714111 seconds
+
+______________________________________________________________________________
+remove garbage:
+
+aq-covtest ../Sakha-corpus/sah.crp.txt-types-only-no-trash sah.automorf.bin 
+Number of tokenised words in the corpus: 96497
+Coverage: 21.55%
+Top unknown words in the corpus:
+350	 к
+245	 а
+207	 т
+168	 р
+160	 ү
+137	 э
+132	 о
+112	 и
+103	 л
+90	 ы
+84	 та
+82	 н
+75	 с
+75	 б
+65	 тү
+63	 бы
+61	 м
+61	 ын
+50	 ин
+49	 ту
+Translation time: 1.0092875957489014 seconds
