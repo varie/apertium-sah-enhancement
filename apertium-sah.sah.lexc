@@ -125,6 +125,15 @@ Multichar_Symbols
 %{a%}              ! 
 %{р%}              ! 
 
+%{R%}
+%{╳%}
+
+%{Л%}   ! ry: for PLURAL LAR when it disappears in PL + px3pl
+!! ??? this was necessary because using {L} caused a conflict
+!! between completely apparently unrelated rules:
+!! There is a <=-rule conflict between "{р} → л before л" and "{р} deletes before obstruents or something".
+
+
 %{☭%}              ! Used to tell the phonology about a Russian word
 %{ъ%}              ! 
 
@@ -173,6 +182,10 @@ LEXICON CLITICS-INCL-COP
 
 # ;
 
+LEXICON CASES-NOM
+
+%<nom%>: # ; 
+
 LEXICON CASES-OBL
 
 %<par%>:%>%{T%}%{A%} # ;
@@ -182,6 +195,15 @@ LEXICON CASES-OBL
 %<ins%>:%>%{i%}н%{A%}н # ;
 %<com%>:%>%{L%}%{I%}%{I%}н # ;
 %<comp%>:%>%{T%}%{A%}%{A%}ҕ%{A%}р # ;  !!!
+
+LEXICON CASES-POSS-12SG
+
+%<par%>:%>н%{A%} # ;
+%<acc%>:%>н # ;
+%<abl%>:%>тт%{A%}н # ;
+%<ins%>:%>н%{A%}н # ;
+%<com%>:%>н%{I%}%{I%}н # ;
+%<comp%>:%>н%{A%}%{A%}ҕ%{A%}р # ; !!!
 
 LEXICON CASES-POSS-3SP
 
@@ -193,18 +215,7 @@ LEXICON CASES-POSS-3SP
 %<com%>:%>н%{I%}%{I%}н # ;
 %<comp%>:%>н%{A%}%{A%}ҕ%{A%}р # ;  !!!
 
-LEXICON CASES-POSS-12SG
 
-%<par%>:%>н%{A%} # ;
-%<acc%>:%>н # ;
-%<abl%>:%>тт%{A%}н # ;
-%<ins%>:%>н%{A%}н # ;
-%<com%>:%>н%{I%}%{I%}н # ;
-%<comp%>:%>н%{A%}%{A%}ҕ%{A%}р # ; !!!
-
-LEXICON CASES-NOM
-
-%<nom%>: # ; 
 
 LEXICON POSS-JNW
 
@@ -218,6 +229,17 @@ CASES-ETC ;
 %<px3pl%>:%>%{t%}%{A%} CASES-NOM ;
 %<px3pl%>:%>%{L%}%{A%}р%{ы%} CASES-ETC ;
 
+LEXICON POSS-NOM
+
+CASES-ETC ;
+%<px1sg%>:%>%{i%}м CASES-NOM ;
+%<px2sg%>:%>%{i%}ҥ CASES-NOM ;
+%<px3sg%>:%>%{t%}%{A%} CASES-NOM ;
+!%<px3sp%>:%>%{t%}%{A%} CASES-NOM ;
+%<px1pl%>:%>%{B%}%{I%}т CASES-NOM ;
+%<px2pl%>:%>%{G%}%{I%}т CASES-NOM ;
+%<px3pl%>:%{╳%}%>%{L%}%{A%}р%{A%} CASES-NOM ;
+
 LEXICON POSS-OBL
 
 CASES-ETC ;
@@ -229,19 +251,8 @@ CASES-ETC ;
 !%<px3sp%>:%>%{t%}%{I%} CASES-POSS-3SP ;
 %<px1pl%>:%>%{B%}%{I%}т%{I%} CASES-POSS-3SP ;
 %<px2pl%>:%>%{G%}%{I%}т%{I%} CASES-POSS-3SP ;
-%<px3pl%>:%>%{L%}%{A%}р%{I%} CASES-ETC ;
-%<px3pl%>:%>%{L%}%{A%}р%{I%} CASES-POSS-3SP ;
-
-LEXICON POSS-NOM
-
-CASES-ETC ;
-%<px1sg%>:%>%{i%}м CASES-NOM ;
-%<px2sg%>:%>%{i%}ҥ CASES-NOM ;
-%<px3sg%>:%>%{t%}%{A%} CASES-NOM ;
-!%<px3sp%>:%>%{t%}%{A%} CASES-NOM ;
-%<px1pl%>:%>%{B%}%{I%}т CASES-NOM ;
-%<px2pl%>:%>%{G%}%{I%}т CASES-NOM ;
-%<px3pl%>:%>%{L%}%{A%}р%{A%} CASES-NOM ;
+%<px3pl%>:%{╳%}%>%{L%}%{A%}р%{I%} CASES-ETC ;
+%<px3pl%>:%{╳%}%>%{L%}%{A%}р%{I%} CASES-POSS-3SP ;
 
 LEXICON ATTR-SUBST 
 
@@ -271,8 +282,8 @@ CASES-OBL ;
 
 LEXICON SUBST
 
-N-INFL-COMMON ;
-%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ;
+%<sg%>:                  N-INFL-COMMON ;  ! ry: show SG 
+%<pl%>:%>%{Л%}%{A%}%{R%} N-INFL-COMMON ;  ! ry: for PL + px3pl
 
 LEXICON FULL-NOMINAL-INFLECTION
 

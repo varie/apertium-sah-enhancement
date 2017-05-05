@@ -30,6 +30,11 @@ Alphabet
    %{р%}:р
 
    %{☭%}:0
+
+   %{╳%}:0 ! ry: for plural px3pl
+   %{Л%}:л
+   %{R%}:р ! ry: for plural px3pl
+
    %{ъ%}:0
 
    %>:0 ; 
@@ -70,6 +75,14 @@ Rules
 !"Vowel deletion"
 !%{A%}:0 <=> _ %>: %{I%}: ; 
 
+"remove L for plural px3pl"
+%{Л%}:0 <=> _ ?* %{╳%}: ;  ! ry: for plural px3pl
+
+! %{A%}:0 <=> _ ?* %{╳%}: ;  ! ry: for plural px3pl
+
+"remove R for plural px3pl"
+%{R%}:0 <=> _ ?* %{╳%}: ;  ! ry: for plural px3pl
+
 
 !!!== regressive assimilation ==!!!
 
@@ -96,20 +109,26 @@ Rules
 
 "Assimilation after nasals"
 Cx:Cy <=> :Nasal [ :0 - т: ]* _ ;
-      where Cx in ( %{L%} %{T%} %{G%} %{B%} )
-            Cy in (   н     н     ҥ     м   )
+      except  
+              _ ?* %{╳%}: ;  ! ry: for plural px3pl
+      where Cx in ( %{L%} %{Л%} %{T%} %{G%} %{B%} )
+            Cy in (   н     н     н     ҥ     м   )
       matched ;
 
 "Assimilation after high-sonority obstruents"
 Cx:Cy <=> :HighSonCns/:0 _ ;
-      where Cx in ( %{L%} %{T%} )
-            Cy in (   д     д   )
+      except  
+              _ ?* %{╳%}: ;  ! ry: for plural px3pl
+      where Cx in ( %{L%} %{Л%} %{T%} )
+            Cy in (   д     д     д   )
       matched ;
 
 "Assimilation after voiceless consonants"
 Cx:Cy <=> :VoicelessCns/:0 _ ;
-      where Cx in ( %{L%} %{B%} )
-            Cy in (   т     п   )
+      except  
+              _ ?* %{╳%}: ;  ! ry: for plural px3pl
+      where Cx in ( %{L%} %{Л%} %{B%} )
+            Cy in (   т     т     п   )
       matched ;
 
 "{T} → л"
@@ -199,6 +218,7 @@ Cx:Cy <=> :Vow/:0* _ [ %>: :Vow]/[ :0 - %>: ]* ;
              ! :Cons :Vx _ ;  ! FIXME: When does this happen?
              %{A%}:Vx _ ;
          except
+              _ ?* %{╳%}: ; ! ry: for plural px3pl
              :ү :ө [ :Cons* :Cons]/:0* _ ;
              :у :о [ :Cons* :Cons]/:0* _ ;
              ! :Vow :Vow %>: _ ; 
@@ -212,6 +232,7 @@ Cx:Cy <=> :Vow/:0* _ [ %>: :Vow]/[ :0 - %>: ]* ;
 "{A} as part of {I}{A}"
 %{A%}:Vy <=> %{I%}:Vx _ ;
          except
+              _ ?* %{╳%}: ; ! ry: for plural px3pl
              :RealVow :RealVow %>: %{I%}:Vx _ ;
          where Vx in ( и ү ы у )
                Vy in ( э ө а о )
@@ -219,6 +240,9 @@ Cx:Cy <=> :Vow/:0* _ [ %>: :Vow]/[ :0 - %>: ]* ;
 
 "{A} deletes after long vowels and diphthongs and triggers other stuff (and as part of {I}{A})"
 %{A%}:0 <=> :RealVow :RealVow %>: (%{I%}:) _ ;
+            _ ?* %{╳%}: ;   ! ry: for plural px3pl
+
+
 
 "{I} deletes after long vowels and diphthongs and triggers other stuff"
 %{I%}:0 <=> :RealVow :RealVow %>: _ ;
@@ -286,13 +310,15 @@ Vx:Vy <=> :RealVow _ %>: %{A%}: ;
             ! :Vow [ :Cons* :Cons ]/[ :0 - %{☭%}: ]* %{☭%}: _ ;
             ! :Vow [ :Cons* %{☭%}: :Cons ]/[ :0 - %{☭%}: ]* _ ;
         except
+            _ ?* %{╳%}: ;   ! ry: for plural px3pl
             :ү :ө [ :Cons* :Cons ]/:0* _ ;
                ! protects against үө forms with %{☭%} (haha!)
 
 
 "vowel harmony for {A} after үө"
 %{A%}:э <=> :ү :ө [ :Cons* :Cons ]/:0* _ ;
-!         except
+          except
+            _ ?* %{╳%}: ;   ! ry: for plural px3pl
 !             %{ъ%}: %>: [ :Cons* :Cons ]/:0* _ ; 
 
 "vowel harmony for {a} after уо"

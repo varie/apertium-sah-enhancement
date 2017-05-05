@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# must export this variable:
+# export PYTHONPATH="/usr/local/lib/python3.5/site-packages"
+
 # *.yaml
 for yaml in \
    aorist.yaml   \
