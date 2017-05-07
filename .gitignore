@@ -1,3 +1,6 @@
+# RY setup
+.-Backup/
+
 **/.DS_Store
 venv/
 .svn/
@@ -17,6 +20,7 @@ configure
 install-sh
 missing
 modes/
+
 sah.autogen.att.gz
 sah.autogen.bin
 sah.autogen.hfst
@@ -25,4 +29,7 @@ sah.automorf.bin
 sah.automorf.hfst
 sah.autopgen.bin
 sah.rlx.bin
+
 tests/quality-stats.xml
+.test-mt
+.test-ref
