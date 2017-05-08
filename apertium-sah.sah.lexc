@@ -1723,7 +1723,7 @@ LEXICON Nouns
 автомобиль:автомобиль N1 ; ! "automobile, car"
 аҕа:аҕа N1 ; ! "father;"
 аҕабыыт:аҕабыыт N1 ; ! "priest"
-аҕа%-ий̃э:аҕа%-ий̃э N1 ; ! "parents"  !!! ???
+аҕа%-ийэ:аҕа%-ийэ N1 ; ! "parents"
 агроном:агроном N1 ; ! "agronomist, agricultural specialist"
 аҕыныах:аҕыныах N1 ; ! "salve"
 аҕырыа:аҕырыа N1 ; ! "glass beads"
@@ -1741,8 +1741,7 @@ LEXICON Nouns
 аймах:аймах N1 ; ! "relative, family member"
 айхал:айхал N1 ; ! "glory, fame"
 айымньы:айымньы N1 ; ! "creation"
-ай̃ыы:ай̃ыы N1 ; ! "error, crime, guilt, fault" !!! ???
-айыы:айыы N1 ; ! "work"
+айыы:айыы N1 ; ! "error, crime, guilt, fault; work"
 акушерка:акушерка N1 ; ! "midwife, obstetric nurse"
 алаадьы:алаадьы N1 ; ! "fritter, flapjack, pancake"
 алаас:алаас N1 ; ! "inhabited by a single family"
@@ -2070,9 +2069,9 @@ LEXICON Nouns
 иис:иис N1 ; ! "sewing;"
 иис:иис N1 ; ! "work;"
 иистэнэр% массыына:иистэнэр% массыына N1 ; ! "machine"
-ий̃э% дойду:ий̃э% дойду N1 ; ! "motherland, homeland, native country"  !!! ???
-ий̃э:ий̃э N1 ; ! "mother;"  !!! ???
-ий̃э% хара:ий̃э% хара N1 ; ! "entirety, totality"  !!! ???
+ийэ% дойду:ийэ% дойду N1 ; ! "motherland, homeland, native country"
+ийэ:ийэ N1 ; ! "mother"
+ийэ% хара:ийэ% хара N1 ; ! "entirety, totality"
 илдьит:илдьит N1 ; ! "ambassador"
 ил:ил N1 ; ! "friendship, amity, peace;"
 илим:илим N1 ; ! "net web ;"
@@ -2115,7 +2114,7 @@ LEXICON Nouns
 капитан:капитан N1 ; ! "captain"
 карта:карта N1 ; ! "map"
 карточка:карточка N1 ; ! "file card"
-киий̃ит:киий̃ит N1 ; ! "daughter%-in%-law"  !!! ???
+киийит:киийит N1 ; ! "daughter%-in%-law"
 кии:кии N1 ; ! "manure, dung, droppings"
 киилэ:киилэ N1 ; ! "kilo, kilogram"
 киинэ:киинэ N1 ; ! "movie, cinema"
@@ -2180,7 +2179,7 @@ LEXICON Nouns
 кубарнатор:кубарнатор N1 ; ! "governor, administrator"
 куйаар:куйаар N1 ; ! "outer space"
 куйаас:куйаас N1 ; ! "heat"
-куй̃ах:куй̃ах N1 ; ! "armor"  !!! ???
+куйах:куйах N1 ; ! "armor"
 куйуур:куйуур N1 ; ! "net"
 күкүр:күкүр N1 ; ! "feed trough"
 кулахы:кулахы N1 ; ! "bug, bedbug"
@@ -2266,7 +2265,7 @@ LEXICON Nouns
 кыах:кыах N1 ; ! "mastery, power"
 кыбаас:кыбаас N1 ; ! "kvass"
 кыбытык:кыбытык N1 ; ! "insertion"
-кый̃ат:кый̃ат N1 ; ! "wing;"  !!! ???
+кыйат:кыйат N1 ; ! "wing;"
 кылаас:кылаас N1 ; ! "class, classroom"
 кыламан:кыламан N1 ; ! "eyelash"
 кыл:кыл N1 ; ! "horsehair"
@@ -2406,7 +2405,7 @@ LEXICON Nouns
 мындаа:мындаа N1 ; ! "top, peak, summit"
 мыыла:мыыла N1 ; ! "soap"
 мэйин:мэйин N1 ; ! "brain"
-мэй̃:мэй̃ N1 ; ! "head"  !!! ???
+мэй:мэй N1 ; ! "head"
 мэкчиргэ:мэкчиргэ N1 ; ! "owl"
 мэҥ:мэҥ N1 ; ! "birthmark, mole"
 мэнэх:мэнэх N1 ; ! "dial. musk deer"
