@@ -5,7 +5,64 @@ Config:
     Morph: ../sah.automorf.hfst
 
 Tests:
-  "Possessive cases plural": 
+  "Possessive cases singular": 
+ 
+    ат<n><sg><px1sg><nom> : атым
+    ат<n><sg><px1sg><acc> : аппын
+    ат<n><sg><px1sg><par> : аппына
+    ат<n><sg><px1sg><dat> : аппар
+    ат<n><sg><px1sg><abl> : аппыттан
+    ат<n><sg><px1sg><ins> : аппынан
+    ат<n><sg><px1sg><com> : аппыныын
+    ат<n><sg><px1sg><comp> : аппынааҕар
+
+    ат<n><sg><px2sg><nom> : атыҥ
+    ат<n><sg><px2sg><acc> : аккын
+    ат<n><sg><px2sg><par> : аккына
+    ат<n><sg><px2sg><dat> : аккар
+    ат<n><sg><px2sg><abl> : аккыттан
+    ат<n><sg><px2sg><ins> : аккынан
+    ат<n><sg><px2sg><com> : аккыныын
+    ат<n><sg><px2sg><comp> : аккынааҕар
+
+    ат<n><sg><px3sg><nom> : ата
+    ат<n><sg><px3sg><acc> : атын
+    ат<n><sg><px3sg><par> : атына
+    ат<n><sg><px3sg><dat> : атыгар
+    ат<n><sg><px3sg><abl> : атыттан
+    ат<n><sg><px3sg><ins> : атынан
+    ат<n><sg><px3sg><com> : атыныын
+    ат<n><sg><px3sg><comp> : атынааҕар
+
+    ат<n><sg><px1pl><nom> : аппыт
+    ат<n><sg><px1pl><acc> : аппытын
+    ат<n><sg><px1pl><par> : аппытына
+    ат<n><sg><px1pl><dat> : аппытыгар
+    ат<n><sg><px1pl><abl> : аппытыттан
+    ат<n><sg><px1pl><ins> : аппытынан
+    ат<n><sg><px1pl><com> : аппытыныын
+    ат<n><sg><px1pl><comp> : аппытынааҕар
+
+    ат<n><sg><px2pl><nom> : аккыт
+    ат<n><sg><px2pl><acc> : аккытын
+    ат<n><sg><px2pl><par> : аккытына
+    ат<n><sg><px2pl><dat> : аккытыгар
+    ат<n><sg><px2pl><abl> : аккытыттан
+    ат<n><sg><px2pl><ins> : аккытынан
+    ат<n><sg><px2pl><com> : аккытыныын
+    ат<n><sg><px2pl><comp> : аккытынааҕар
+
+    ат<n><sg><px3pl><nom> : аттара
+    ат<n><sg><px3pl><acc> : аттарын
+    ат<n><sg><px3pl><par> : аттарына
+    ат<n><sg><px3pl><dat> : аттарыгар
+    ат<n><sg><px3pl><abl> : аттарыттан
+    ат<n><sg><px3pl><ins> : аттарынан
+    ат<n><sg><px3pl><com> : аттарыныын
+    ат<n><sg><px3pl><comp> : аттарынааҕар
+
+
+#  "Possessive cases plural": 
  
     ат<n><pl><px1sg><nom> : аттарым
     ат<n><pl><px1sg><acc> : аттарбын
