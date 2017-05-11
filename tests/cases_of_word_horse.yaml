@@ -159,3 +159,18 @@ Tests:
     ат<n><pl><px3pl><ins> : аттарынан
     ат<n><pl><px3pl><com> : аттарыныын
     ат<n><pl><px3pl><comp> : аттарынааҕар
+
+# additional forms from base АП:
+
+    ап<n><sg><comp>  : аптааҕар
+                     
+    ап<n><sg><loc><attr> : аптааҕы
+    ап<n><sg><loc><subst><nom> : аптааҕы
+
+    аптаах<n><sg><acc> : аптааҕы
+
+
+# don't know how to test with yaml:
+# this form ЬЬЬЬЬ is ILLEGAL and should not be analyzed ...
+#    ььььь+? : ььььь
+

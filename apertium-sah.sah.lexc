@@ -944,6 +944,9 @@ XXI:XXI NUM-ROMAN ; ! ""
 
 LEXICON Nouns 
 
+аптаах:аптаах N1 ; ! "magician; magical"
+
+
 !уст:уст N1 ; ! "" !!! check
 !туһ:туһ N1 ; ! "" !!! check
 !атт:атт N1 ; ! "" ! FIXME !!! check
@@ -4533,7 +4536,6 @@ LEXICON Adjectives
 нэһилиэнньэлээх:нэһилиэнньэлээх A4 ; ! ""
 дьиҥнээх:дьиҥнээх A4 ; ! ""
 бырааптаах:бырааптаах A4 ; ! "в праве" ! FIXME: check categorisation
-
 
 нөҥүө:нөҥүө A4 ; ! "следующий"
 аайы:аайы  A4 ; ! " each, every;"
