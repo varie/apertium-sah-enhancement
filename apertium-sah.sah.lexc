@@ -944,9 +944,9 @@ XXI:XXI NUM-ROMAN ; ! ""
 
 LEXICON Nouns 
 
-уст:уст N1 ; ! ""
-туһ:туһ N1 ; ! ""
-атт:атт N1 ; ! "" ! FIXME
+!уст:уст N1 ; ! "" !!! check
+!туһ:туһ N1 ; ! "" !!! check
+!атт:атт N1 ; ! "" ! FIXME !!! check
 
 киһи:киһи N1 ; ! "человек" ! FIXME: irreg dative
 эр% киһи:эр% киһи N1 ; ! "мужчина"
