@@ -124,7 +124,7 @@ Cx:Cy <=> :Nasal [ :0 - т: ]* _ ;
 !!!
 "POSS+LOC"
 Cx:Cy <=> :Nasal [ :0 - т: ]* _ ;
-		  %{Z%}: ?* _ ;
+	  %{Z%}: ?* _ ;
       except  
               _ ?* %{╳%}: ;  ! ry: for plural px3pl
       where Cx in ( %{T%} )
@@ -134,6 +134,7 @@ Cx:Cy <=> :Nasal [ :0 - т: ]* _ ;
 "Assimilation after high-sonority obstruents"
 Cx:Cy <=> :HighSonCns/:0 _ ;
       except  
+              %{Z%}: ?* _ ;
               _ ?* %{╳%}: ;  ! ry: for plural px3pl
       where Cx in ( %{L%} %{Л%} %{T%} )
             Cy in (   д     д     д   )
@@ -149,6 +150,8 @@ Cx:Cy <=> :VoicelessCns/:0 _ ;
 
 "{T} → л"
 %{T%}:л <=> :л/:0 _ ; 
+      except  
+              %{Z%}: ?* _ ;
 
 "{G} after х"
 %{G%}:х <=> :х/:0 _ ;
