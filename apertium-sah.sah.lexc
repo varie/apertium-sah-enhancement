@@ -233,24 +233,29 @@ CASES-ETC ;
 LEXICON POSS-NOM
 
 CASES-ETC ;
-%<px1sg%>:%>%{i%}м%{Z%} CASES-NOM ;
-%<px2sg%>:%>%{i%}ҥ%{Z%} CASES-NOM ;
-%<px3sg%>:%>%{t%}%{A%}%{Z%} CASES-NOM ;
-!%<px3sp%>:%>%{t%}%{A%}%{Z%} CASES-NOM ;
-%<px1pl%>:%>%{B%}%{I%}т%{Z%} CASES-NOM ;
-%<px2pl%>:%>%{G%}%{I%}т%{Z%} CASES-NOM ;
-%<px3pl%>:%{╳%}%>%{L%}%{A%}р%{A%}%{Z%} CASES-NOM ;
+%<px1sg%>:%>%{i%}м CASES-NOM ;
+%<px2sg%>:%>%{i%}ҥ CASES-NOM ;
+%<px3sg%>:%>%{t%}%{A%} CASES-NOM ;
+!%<px3sp%>:%>%{t%}%{A%} CASES-NOM ;
+%<px1pl%>:%>%{B%}%{I%}т CASES-NOM ;
+%<px2pl%>:%>%{G%}%{I%}т CASES-NOM ;
+%<px3pl%>:%{╳%}%>%{L%}%{A%}р%{A%} CASES-NOM ;
 
 LEXICON POSS-OBL
 
 CASES-ETC ;
+%<px1sg%>:%>%{B%}%{I%}%{Z%} CASES-ETC ;
 %<px1sg%>:%>%{B%}%{I%}%{Z%} CASES-POSS-12SG ;
 %<px1sg%>%<dat%>:%>%{B%}%{A%}р%{Z%} # ;
+%<px2sg%>:%>%{G%}%{I%}%{Z%} CASES-ETC ;
 %<px2sg%>:%>%{G%}%{I%}%{Z%} CASES-POSS-12SG ;
 %<px2sg%>%<dat%>:%>%{G%}%{A%}р%{Z%} # ;
+%<px3sg%>:%>%{t%}%{I%}%{Z%} CASES-ETC ;
 %<px3sg%>:%>%{t%}%{I%}%{Z%} CASES-POSS-3SP ;
 !%<px3sp%>:%>%{t%}%{I%}%{Z%} CASES-POSS-3SP ;
+%<px1pl%>:%>%{B%}%{I%}т%{I%}%{Z%} CASES-ETC ;
 %<px1pl%>:%>%{B%}%{I%}т%{I%}%{Z%} CASES-POSS-3SP ;
+%<px2pl%>:%>%{G%}%{I%}т%{I%}%{Z%} CASES-ETC ;
 %<px2pl%>:%>%{G%}%{I%}т%{I%}%{Z%} CASES-POSS-3SP ;
 %<px3pl%>:%{╳%}%>%{L%}%{A%}р%{I%}%{Z%} CASES-ETC ;
 %<px3pl%>:%{╳%}%>%{L%}%{A%}р%{I%}%{Z%} CASES-POSS-3SP ;
