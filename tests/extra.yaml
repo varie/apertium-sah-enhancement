@@ -1,0 +1,19 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../sah.autogen.hfst
+    Morph: ../sah.automorf.hfst
+
+Tests:
+  "Some tests":
+    хос<n><sg><px2sg><nom> : хоһуҥ
+    хос<n><sg><px2sg><loc><attr> : хоскунааҕы
+    хос<n><sg><px2sg><subst><nom> : хоскунааҕы
+    күөл<n><sg><px2sg><loc><attr> : күөлгүтүнээҕи
+    күөл<n><sg><px2sg><subst><nom> : күөлгүтүнээҕи
+    күөл<n><sg><loc><attr> : күөллээҕи
+    күөл<n><sg><loc><subst><nom> : күөллээҕи
+    хос<n><sg><px2sg><acc> : хоскун
+    аттаах<n><sg><acc> : аттааҕы
+    ат<n><sg><loc><attr> : аттааҕы
+    ат<n><sg><loc><subst><nom> : аттааҕы

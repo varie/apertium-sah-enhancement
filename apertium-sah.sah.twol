@@ -34,10 +34,14 @@ Alphabet
    %{╳%}:0 ! ry: for plural px3pl
    %{Л%}:л
    %{R%}:р ! ry: for plural px3pl
+   
+   !!! this marker is always present in possessive forms,
+   !!! used later in the word by "LOC" suffix
+   %{Z%}:0
 
    %{ъ%}:0
 
-   %>:0 ; 
+   %>:0 ;
 
 
 Sets
@@ -107,14 +111,26 @@ Rules
 
 !!!== progressive assimilation ==!!!
 
+!!! this also works for %{T%} for most cases,
+!!! but we treat %{T%} separetely because of POSS+LOC -- below
 "Assimilation after nasals"
 Cx:Cy <=> :Nasal [ :0 - т: ]* _ ;
       except  
               _ ?* %{╳%}: ;  ! ry: for plural px3pl
-      where Cx in ( %{L%} %{Л%} %{T%} %{G%} %{B%} )
-            Cy in (   н     н     н     ҥ     м   )
+      where Cx in ( %{L%} %{Л%} %{G%} %{B%} )
+            Cy in (   н     н     ҥ     м   )
       matched ;
 
+!!!
+"POSS+LOC"
+Cx:Cy <=> :Nasal [ :0 - т: ]* _ ;
+		  %{Z%}: ?* _ ;
+      except  
+              _ ?* %{╳%}: ;  ! ry: for plural px3pl
+      where Cx in ( %{T%} )
+            Cy in (   н   )
+      matched ;
+	  
 "Assimilation after high-sonority obstruents"
 Cx:Cy <=> :HighSonCns/:0 _ ;
       except  
