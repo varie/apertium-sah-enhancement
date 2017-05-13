@@ -1,0 +1,44 @@
+* NOTES
+
+sakhatyla errors:
+
+аптааҕар does not have analysis with base аптаах only with ап
+
+
+** questionable forms:
+
+*** forms with LOCATIVE (OSSIFIED) TA(A)GI
+
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "аптааҕар" | apertium -n -d . sah-morph
+^аптааҕар/ап<n><sg><comp>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "аптааҕа" | apertium -n -d . sah-morph
+^аптааҕа/аптаах<n><sg><px3sg><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "аптааҕы" | apertium -n -d . sah-morph
+^аптааҕы/аптаах<n><sg><acc>/ап<n><sg><loc><attr>/ап<n><sg><loc><subst><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттааҕы" | apertium -n -d . sah-morph
+^куораттааҕы/куорат<n><sg><loc><attr>/куорат<n><sg><loc><subst><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттааҕы" | apertium -n -d . sah-morph
+^куораттааҕыта/куорат<n><sg><loc><subst><par>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттааҕынааҕар" | apertium -n -d . sah-morph
+^куораттааҕынааҕар/*куораттааҕынааҕар$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттааҕытааҕар" | apertium -n -d . sah-morph
+^куораттааҕытааҕар/куорат<n><sg><loc><subst><comp>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "аптааҕы" | apertium -n -d . sah-morph
+^аптааҕы/аптаах<n><sg><acc>/ап<n><sg><loc><attr>/ап<n><sg><loc><subst><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттааҕым" | apertium -n -d . sah-morph
+^куораттааҕым/*куораттааҕым$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "ийэм" | apertium -n -d . sah-morph
+^ийэм/ийэ<n><sg><px1sg><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттааҕы" | apertium -n -d . sah-morph
+^куораттааҕы/куорат<n><sg><loc><attr>/куорат<n><sg><loc><subst><sg><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттааҕылар" | apertium -n -d . sah-morph
+^куораттааҕылар/куорат<n><sg><loc><subst><pl><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттааҕылар" | apertium -n -d . sah-morph
+^куораттааҕылар/куорат<n><sg><loc><subst><pl><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттааҕы" | apertium -n -d . sah-morph
+^куораттааҕы/куорат<n><sg><loc><attr>/куорат<n><sg><loc><subst><sg><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттардааҕы" | apertium -n -d . sah-morph
+^куораттардааҕы/куорат<n><pl><loc><attr>/куорат<n><pl><loc><subst><sg><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ echo "куораттардааҕылар" | apertium -n -d . sah-morph
+^куораттардааҕылар/куорат<n><sg-loc><subst><pl><nom>$
+yangarbe@hp8x-69:~/revita/apertium-sah-enhancement$ 
