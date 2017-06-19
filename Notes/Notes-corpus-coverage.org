@@ -37,7 +37,11 @@ after cleaning: 789173
 unique types:    96430
 no trash:        92633
 
-sort --ignore-case < sah.crp.txt-types | uniq -c --ignore-case >  sah.crp.txt-types.uniq 
+
+
+sort --ignore-case < sah.crp.txt-types | sed -e 's/./\L\0/g' | uniq -c --ignore-case >  sah.crp.txt-types.uniq 
+
+
 
 [- .,!?№–“”„=();: +%«»…_/*·"$&—•―]+
 
