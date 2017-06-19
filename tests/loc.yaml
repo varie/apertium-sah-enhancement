@@ -1,0 +1,35 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../sah.autogen.hfst
+    Morph: ../sah.automorf.hfst
+
+Tests:
+  "<loc> tests":
+    хос<n><sg><px1sg><loc><attr> : хоспунааҕы
+    хос<n><sg><px1sg><loc><subst><nom> : хоспунааҕы
+    хос<n><sg><px2sg><loc><attr> : хоскунааҕы
+    хос<n><sg><px2sg><loc><subst><nom> : хоскунааҕы
+    хос<n><sg><px3sg><loc><attr> : хоһунааҕы
+    хос<n><sg><px3sg><loc><subst><nom> : хоһунааҕы
+
+    хос<n><sg><px1pl><loc><attr> : хоспутунааҕы
+    хос<n><sg><px1pl><loc><subst><nom> : хоспутунааҕы
+    хос<n><sg><px2pl><loc><attr> : хоскутунааҕы
+    хос<n><sg><px2pl><loc><subst><nom> : хоскутунааҕы
+    хос<n><sg><px3pl><loc><attr> : хосторунааҕы
+    хос<n><sg><px3pl><loc><subst><nom> : хосторунааҕы
+
+    # no form for хос<n><sg><px1sg> - хосторумнааҕы ?
+    # no form for хос<n><sg><px2sg> - хосторуҥнааҕы ?
+    хос<n><pl><px3sg><loc><attr> : хосторунааҕы
+    хос<n><pl><px3sg><loc><subst><nom> : хосторунааҕы
+
+    хос<n><pl><px1pl><loc><attr> : хосторбутунааҕы
+    хос<n><pl><px1pl><loc><subst><nom> : хосторбутунааҕы
+    хос<n><pl><px2pl><loc><attr> : хосторгутунааҕы
+    хос<n><pl><px2pl><loc><subst><nom> : хосторгутунааҕы
+    хос<n><pl><px3pl><loc><attr> : хосторунааҕы
+    хос<n><pl><px3pl><loc><subst><nom> : хосторунааҕы
+
+    
