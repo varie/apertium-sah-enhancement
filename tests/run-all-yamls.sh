@@ -6,15 +6,16 @@
 # *.yaml
 for yaml in \
    aorist.yaml   \
+   cases_of_word_horse.yaml \
    cases.yaml  \
    miscellaneous.yaml  \
    necessitative.yaml  \
    russian.yaml \
    possessives.yaml  \
-   possessives_plural_wiki_sakhatyla.yaml  \
-   possessives_singular_wiki_sakhatyla.yaml  \
+   possessives_wiki_sakhatyla.yaml  \
    cases_plural.yaml  \
-   cases_wiki_sakhatyla.yaml
+   cases_wiki_sakhatyla.yaml \
+   loc.yaml \
 
    do
    echo "============================================================ Doing $yaml."
