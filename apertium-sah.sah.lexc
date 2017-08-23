@@ -127,6 +127,7 @@ Multichar_Symbols
 
 %{R%}
 %{╳%}
+%{Z%}
 
 %{Л%}   ! ry: for PLURAL LAR when it disappears in PL + px3pl
 !! ??? this was necessary because using {L} caused a conflict
@@ -243,16 +244,21 @@ CASES-ETC ;
 LEXICON POSS-OBL
 
 CASES-ETC ;
-%<px1sg%>:%>%{B%}%{I%} CASES-POSS-12SG ;
-%<px1sg%>%<dat%>:%>%{B%}%{A%}р # ;
-%<px2sg%>:%>%{G%}%{I%} CASES-POSS-12SG ;
-%<px2sg%>%<dat%>:%>%{G%}%{A%}р # ;
-%<px3sg%>:%>%{t%}%{I%} CASES-POSS-3SP ;
-!%<px3sp%>:%>%{t%}%{I%} CASES-POSS-3SP ;
-%<px1pl%>:%>%{B%}%{I%}т%{I%} CASES-POSS-3SP ;
-%<px2pl%>:%>%{G%}%{I%}т%{I%} CASES-POSS-3SP ;
-%<px3pl%>:%{╳%}%>%{L%}%{A%}р%{I%} CASES-ETC ;
-%<px3pl%>:%{╳%}%>%{L%}%{A%}р%{I%} CASES-POSS-3SP ;
+%<px1sg%>:%>%{B%}%{I%}%{Z%} CASES-ETC ;
+%<px1sg%>:%>%{B%}%{I%}%{Z%} CASES-POSS-12SG ;
+%<px1sg%>%<dat%>:%>%{B%}%{A%}р%{Z%} # ;
+%<px2sg%>:%>%{G%}%{I%}%{Z%} CASES-ETC ;
+%<px2sg%>:%>%{G%}%{I%}%{Z%} CASES-POSS-12SG ;
+%<px2sg%>%<dat%>:%>%{G%}%{A%}р%{Z%} # ;
+%<px3sg%>:%>%{t%}%{I%}%{Z%} CASES-ETC ;
+%<px3sg%>:%>%{t%}%{I%}%{Z%} CASES-POSS-3SP ;
+!%<px3sp%>:%>%{t%}%{I%}%{Z%} CASES-POSS-3SP ;
+%<px1pl%>:%>%{B%}%{I%}т%{I%}%{Z%} CASES-ETC ;
+%<px1pl%>:%>%{B%}%{I%}т%{I%}%{Z%} CASES-POSS-3SP ;
+%<px2pl%>:%>%{G%}%{I%}т%{I%}%{Z%} CASES-ETC ;
+%<px2pl%>:%>%{G%}%{I%}т%{I%}%{Z%} CASES-POSS-3SP ;
+%<px3pl%>:%{╳%}%>%{L%}%{A%}р%{I%}%{Z%} CASES-ETC ;
+%<px3pl%>:%{╳%}%>%{L%}%{A%}р%{I%}%{Z%} CASES-POSS-3SP ;
 
 LEXICON ATTR-SUBST 
 

@@ -1,0 +1,38 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../sah.autogen.hfst
+    Morph: ../sah.automorf.hfst
+
+Tests:
+  "Some tests for LOC suffix ТААҔЫ":
+
+    хос<n><sg><px2sg><nom>        : хоһуҥ
+    хос<n><sg><px2sg><acc>        : хоскун
+    хос<n><sg><px2sg><loc><attr>  : хоскунааҕы
+    хос<n><sg><px2sg><subst><nom> : хоскунааҕы
+
+    күөл<n><sg><px2sg><loc><attr>  : күөлгүтүнээҕи
+    күөл<n><sg><px2sg><subst><nom> : күөлгүтүнээҕи
+    күөл<n><sg><loc><attr>         : күөллээҕи
+    күөл<n><sg><loc><subst><nom>   : күөллээҕи
+
+    аттаах<n><sg><acc>         : аттааҕы
+    ат<n><sg><loc><attr>       : аттааҕы
+    ат<n><sg><loc><subst><nom> : аттааҕы
+
+    ап<n><sg><comp>            : аптааҕар
+    аптаах<n><sg><px3sg><nom>  : аптааҕа
+    аптаах<n><sg><acc>         : аптааҕы
+    ап<n><sg><loc><attr>       : аптааҕы
+    ап<n><sg><loc><subst><nom> : аптааҕы
+    
+    куорат<n><sg><loc><attr>           : куораттааҕы
+    куорат<n><sg><loc><subst><sg><nom> : куораттааҕы
+    куорат<n><sg><loc><subst><par>     : куораттааҕыта
+    куорат<n><sg><loc><subst><comp>    : куораттааҕытааҕар
+
+    куорат<n><sg><loc><subst><pl><nom> : куораттааҕылар 
+    куорат<n><pl><loc><attr>           : куораттардааҕы
+    куорат<n><pl><loc><subst><sg><nom> : куораттардааҕы
+    куорат<n><sg-loc><subst><pl><nom>  : куораттардааҕылар
