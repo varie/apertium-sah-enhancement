@@ -117,3 +117,21 @@ Tests:
     ат<n><pl><px3pl><ins> : аттарынан
     ат<n><pl><px3pl><com> : аттарыныын
     ат<n><pl><px3pl><comp> : аттарынааҕар
+
+#  Word "ап" in some cases coincides with "ат"
+    ап<n><sg><px1sg><acc> : аппын
+    ап<n><sg><px1sg><par> : аппына
+    ап<n><sg><px1sg><dat> : аппар
+    ап<n><sg><px1sg><abl> : аппыттан
+    ап<n><sg><px1sg><ins> : аппынан
+    ап<n><sg><px1sg><com> : аппыныын
+    ап<n><sg><px1sg><comp> : аппынааҕар
+
+    ап<n><sg><px1pl><nom> : аппыт
+    ап<n><sg><px1pl><acc> : аппытын
+    ап<n><sg><px1pl><par> : аппытына
+    ап<n><sg><px1pl><dat> : аппытыгар
+    ап<n><sg><px1pl><abl> : аппытыттан
+    ап<n><sg><px1pl><ins> : аппытынан
+    ап<n><sg><px1pl><com> : аппытыныын
+    ап<n><sg><px1pl><comp> : аппытынааҕар
