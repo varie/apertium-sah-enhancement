@@ -611,6 +611,8 @@ LEXICON PRON-ITG
 
 %<prn%>%<itg%>: FULL-NOMINAL-INFLECTION ;
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON V-PERS-S1
 
 %<p1%>%<sg%>:%>%{B%}%{I%}н CLITICS-NO-COP ;
@@ -629,6 +631,13 @@ LEXICON V-PERS-S2
 %<p2%>%<pl%>:%>г%{I%}т CLITICS-NO-COP ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р%>%{A%} CLITICS-NO-COP ; ! FIXME: Check
 
+
+
+LEXICON V-FINITE-REGULAR_NEGATIVE
+
+%<ifi%>:%>%{T%} V-PERS-IFI ;
+
+
 LEXICON V-PERS-IFI
 ! NB.: -TIm -TIŋ -TA -TIbIt -TIgIT -tIlAr
 
@@ -639,9 +648,7 @@ LEXICON V-PERS-IFI
 %<p2%>%<pl%>:%>%{I%}г%{I%}т CLITICS-NO-COP ;
 %<p3%>%<pl%>:%>%{I%}%{L%}%{A%}р CLITICS-NO-COP ; ! FIXME: Check
 
-LEXICON V-FINITE-REGULAR_NEGATIVE
 
-%<ifi%>:%>%{T%} V-PERS-IFI ;
 
 LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
@@ -656,16 +663,17 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
 ! TODO: Stem-final vowels merge with the initial suffix vowel into {I}
 
-%<aor%>:%>%{A%}%{р%} V-PERS-S1 ;
+       %<aor%>:%>%{A%}%{р%}  V-PERS-S1 ;
 %<neg%>%<aor%>:%>%{B%}%{A%}т V-PERS-S1 ; 
 
-%<past%>:%>%{B%}%{I%}т V-PERS-S2 ; ! FIXME: check
+       %<past%>:%>%{B%}%{I%}т       V-PERS-S2 ; ! FIXME: check
 %<neg%>%<past%>:%>%{B%}%{A%}т%{A%}х V-PERS-S2 ; ! FIXME: check -S1 or -S2 ?
 
-%<pii%>:%>%{A%}%{р%}% эт V-PERS-S2 ; ! Dir/LR
+! ??? past iterative / frequentative
+       %<pii%>:%>%{A%}%{р%}% эт V-PERS-S2 ;  ! Dir/LR
 %<neg%>%<pii%>:%>%{B%}%{A%}т% эт V-PERS-S2 ;  ! Dir/LR
 
-%<pii%>:%>%{A%}%{р%} V-PERS-S2 ;
+       %<pii%>:%>%{A%}%{р%}  V-PERS-S2 ;
 %<neg%>%<pii%>:%>%{B%}%{A%}т V-PERS-S2 ; 
 
 %<pros%>:%>%{I%}%{A%}%{G%} V-PERS-S2 ; ! FIXME: check
@@ -677,8 +685,10 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
 %<nec%>:%>%{I%}%{A%}х%>т%{A%}%{A%}х V-PERS-S1 ; ! FIXME: check
 
-%<resl%>:%>%{B%}%{I%}т V-PERS-S1 ; ! FIXME: check
+       %<resl%>:%>%{B%}%{I%}т       V-PERS-S1 ; ! FIXME: check
 %<neg%>%<resl%>:%>%{B%}%{A%}т%{A%}х V-PERS-S1 ; ! FIXME: check -S1 or -S2 ?
+
+
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
@@ -688,7 +698,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 %<prc_impf%>:%>%{A%} CLITICS-NO-COP ; ! FIXME: check
 
-%<gna_cond%>:%>т%{A%}р V-PERS-S2 ;
+%<gna_cond%>:%>%{T%}%{A%}р V-PERS-S2 ;
 
 %<gpr_past%>:%>%{B%}%{I%}т CLITICS-NO-COP ; ! FIXME: check
 

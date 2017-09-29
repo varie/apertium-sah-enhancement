@@ -1,0 +1,33 @@
+* VERBS
+
+
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "бардым" | apertium -d . sah-morph
+^бардым/бар<v><iv><ifi><p1><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барар этим" | apertium -d . sah-morph
+^барар этим/бар<v><iv><pii><p1><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барабын" | apertium -d . sah-morph
+^барабын/бар<v><iv><aor><p1><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барар" | apertium -d . sah-morph
+^барар/бар<v><iv><prc_aor>/бар<v><iv><gpr_aor>/бар<v><iv><aor><p3><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "ыллыыр" | apertium -d . sah-morph
+^ыллыыр/ыллаа<v><tv><prc_aor>/ыллаа<v><tv><gpr_aor>/ыллаа<v><tv><aor><p3><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барбыта" | apertium -d . sah-morph
+^барбыта/бар<v><iv><past><p3><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барara" | apertium -d . sah-morph
+^барara/*барara$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барара" | apertium -d . sah-morph
+^барара/бар<v><iv><pii><p3><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барыаҕа" | apertium -d . sah-morph
+^барыаҕа/бар<v><iv><pros><p3><sg>/бараа<v><tv><pros><p3><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барбыт" | apertium -d . sah-morph
+^барбыт/бар<v><iv><resl><p3><sg>/бар<v><iv><gpr_past>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барбыттаах" | apertium -d . sah-morph
+^барбыттаах/бар<v><iv><epis><p3><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "барыахтаах" | apertium -d . sah-morph
+^барыахтаах/бар<v><iv><nec><p3><sg>/бараа<v><tv><nec><p3><sg>$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "бардара" | apertium -d . sah-morph
+^бардара/*бардара$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "бардар" | apertium -d . sah-morph
+^бардар/*бардар$^./.<sent>$
+yangarbe@whq-22:~/Revita/apertium-sah-enhancement$ echo "бартара" | apertium -d . sah-morph
+^бартара/бар<v><iv><gna_cond><p3><sg>$^./.<sent>$
