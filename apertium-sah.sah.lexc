@@ -669,7 +669,7 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
        %<past%>:%>%{B%}%{I%}т       V-PERS-S2 ; ! FIXME: check
 %<neg%>%<past%>:%>%{B%}%{A%}т%{A%}х V-PERS-S2 ; ! FIXME: check -S1 or -S2 ?
 
-! ??? past iterative / frequentative
+! SI: past iterative / frequentative
        %<pii%>:%>%{A%}%{р%}% эт V-PERS-S2 ;  ! Dir/LR
 %<neg%>%<pii%>:%>%{B%}%{A%}т% эт V-PERS-S2 ;  ! Dir/LR
 
@@ -679,6 +679,7 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 %<pros%>:%>%{I%}%{A%}%{G%} V-PERS-S2 ; ! FIXME: check
 !  -IAG суоҕа (-ыа(х)-P2 суоҕа) 
 
+! SI: past episodic
 %<epis%>:%>%{B%}%{I%}тт%{A%}%{A%}х V-PERS-S1 ; ! FIXME: check
 
 !%<nec%>:%>%{А%}р%>д%{A%}%{A%}х V-PERS-S1 ; ! FIXME: check
